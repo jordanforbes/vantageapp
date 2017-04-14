@@ -1,0 +1,57 @@
+.header{
+		background-color: $color1;
+		width:100%;
+		height:40px;
+	}
+.breaker{
+		background-color:$color2;
+		width:100%;
+		height:7px;
+
+
+	}
+
+	.secheader{
+		background-color: $color2;
+		width:100%;
+		height:80px;
+		
+		.tab{
+			margin-top:7px;
+			
+			height:40px;
+			width:175px;
+			
+			float:left;
+			background-color:$tab;
+
+		}
+		.tabfont{
+				margin-top:10px;
+				text-align:center;
+				display:block;
+				font-size:15px;
+				color:$tabfont;
+			}
+		.activetab{
+			background-color:$bgcolor !important;
+			color:$color2 !important;
+
+		}
+		.closer{
+			margin-top:-23px;
+			margin-right:20px;
+			font-size:15px;
+			display:block;
+			float:right;
+			opacity:1;
+			color:$tabfont;
+		}
+		.activecloser{
+			opacity:1;
+			color:black;
+			
+		}
+		
+	}
+	
