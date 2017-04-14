@@ -13,6 +13,8 @@ app.use(express.static(__dirname + '/css'));
 
 // index page 
 app.get('/', function(req, res) {
+
+  
     var drinks = [
         { name: 'Bloody Mary', drunkness: 3 },
         { name: 'Martini', drunkness: 5 },
@@ -22,7 +24,8 @@ app.get('/', function(req, res) {
 
     res.render('pages/index', {
         drinks: drinks,
-        tagline: tagline
+        tagline: tagline,
+      
     });
 });
 

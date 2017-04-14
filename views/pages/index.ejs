@@ -5,18 +5,38 @@
 <head>
     <% include ../partials/head %>
 </head>
-<body class="container">
+<body>
 
     <header>
         <% include ../partials/header %>
     </header>
+    <br>
+    <br>
 
-    <section>
-    <% include ../partials/tabs%>
-    </section>
-    <aside>
+    <div class="col-md-7">
+    <% include ../partials/mainsection/tabs%>
+    </div>
+  
 
-    </aside>
+   
+    <div class="col-md-4">
+        <div class="container">
+            <div class="row">
+                <%include ../partials/sidesection/toolbar%>
+            </div>
+            <div class="row">
+                <%include ../partials/sidesection/followup%>
+            </div>
+            <div class="row">
+                <%include ../partials/sidesection/tags%>
+            </div>
+            <div class="row">
+                <%include ../partials/sidesection/loginstat%>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+    </div>
 
     <footer>
         <% include ../partials/footer %>

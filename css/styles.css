@@ -1,7 +1,7 @@
 .header {
   background-color: #444A4F;
   width: 100%;
-  height: 40px; }
+  height: 45px; }
 
 .breaker {
   background-color: #00B3A6;
@@ -11,10 +11,10 @@
 .secheader {
   background-color: #00B3A6;
   width: 100%;
-  height: 80px; }
+  height: 90px; }
   .secheader .tab {
     margin-top: 7px;
-    height: 40px;
+    height: 45px;
     width: 175px;
     float: left;
     background-color: #00978C; }
@@ -39,15 +39,34 @@
     opacity: 1;
     color: black; }
 
+.subtext {
+  margin-top: -1px;
+  border: 1px solid #D9E6E0;
+  height: 175px;
+  background-color: #F5FEFA;
+  border-radius: 5px; }
+
 * {
   font-family: 'Source Sans Pro', sans-serif; }
+
+.input {
+  display: block;
+  width: 165px;
+  height: 20px;
+  background-color: white;
+  opacity: .1;
+  margin-top: 13px;
+  margin-left: 10px;
+  border-radius: 25px; }
 
 body {
   background-color: #F5FEFA; }
   body .maintext {
+    height: 535px; }
+  body .texttemp {
     margin-top: -1px;
     border: 1px solid #D9E6E0;
-    height: 100px;
+    border-radius: 5px;
     background-color: white; }
   body .tabtext {
     border: 1px solid #D9E6E0;
