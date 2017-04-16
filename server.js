@@ -2,30 +2,44 @@
 // load the things we need
 var express = require('express');
 var app = express();
+var $ = require('jQuery');
 
-// set the view engine to ejs
+
 app.set('view engine', 'ejs');
+
+// app.set('view options', { locals: { scripts: ['work.js'] } })
+// app.locals({
+//     scripts: [],
+//   renderScriptsTags: function (all) {
+//     app.locals.scripts = [];
+//     if (all != undefined) {
+//       return all.map(function(script) {
+//         return '<script src="/js/' + work.js + '"></script>';
+//       }).join('\n ');
+//     }
+//     else {
+//       return '';
+//     }
+//   },
+//   getScripts: function(req, res) {
+//     return scripts;
+//   }
+// });
 
 app.use(express.static(__dirname + '/css'));
 
 
-// use res.render to load up an ejs view file
-
-// index page 
 app.get('/', function(req, res) {
 
-  
-    var drinks = [
-        { name: 'Bloody Mary', drunkness: 3 },
-        { name: 'Martini', drunkness: 5 },
-        { name: 'Scotch', drunkness: 10 }
-    ];
-    var tagline = "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.";
-
     res.render('pages/index', {
-        drinks: drinks,
-        tagline: tagline,
+    
+      function(){
+        $(".message").click(
+            function(){
+                alert("hi")
+            })
       
+  }
     });
 });
 

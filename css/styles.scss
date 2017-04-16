@@ -5,7 +5,18 @@
 *{
 font-family: 'Source Sans Pro', sans-serif;
 }
-
+i{
+	display:block;
+	float:left;
+	margin:10px;
+}
+.conline{
+	// border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+.bold{
+	font-weight:bold;
+}
 .input{
 	display:block;
 	width:165px;
@@ -37,6 +48,7 @@ body{
 		border: 1px solid $bordercolor;
 		border-radius: 5px;
 		background-color: white;
+		margin-bottom:20px;
 	}
 	.tabtext{
 		border: 1px solid $bordercolor;
@@ -51,5 +63,62 @@ body{
 		margin-left:-1px;
 	}
 }
+.smallerbox{
+	padding-top:10px;
+	//border:1px black dashed;
+	.toolbutton{
+		// border:1px black dashed;
+		display:block;
+		height:48px;
+		width:170px;
+		text-align:center;
+	}
+	.editbutton{
+			border-bottom:1px solid black;
+
+	}
+	.statusbutton{
+		border-left:1px solid black;
+		border-bottom:1px solid black;
+		margin-left:-25px;
 
 
+	}
+	.mergebutton{
+		border-right:1px solid black;
+
+	}
+	.faqbutton{
+		margin-left:-25px;
+	}
+}
+.calendar{
+	float:right;
+	background-color:$color2  ;
+}
+.tags{
+	float:right;
+	background-color:$color2  ;
+}
+.sidebox{
+	margin-top:10px;
+}
+
+.toolbarbox{
+	height:130px;
+}
+
+.followupbox{
+
+}
+
+.tagsbox{
+
+}
+
+.loginstatbox{
+
+}
+.divider{
+	width:10px;
+}

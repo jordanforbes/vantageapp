@@ -22,22 +22,32 @@
     margin-top: 10px;
     text-align: center;
     display: block;
-    font-size: 15px;
-    color: #015951; }
+    font-size: 20px;
+    color: #016E68;
+    font-weight: bold; }
   .secheader .activetab {
     background-color: #F5FEFA !important;
     color: #00B3A6 !important; }
+  .secheader .addtab {
+    background-color: #016E68; }
+  .secheader .addtabfont {
+    color: white;
+    opacity: .7;
+    font-weight: bold; }
   .secheader .closer {
-    margin-top: -23px;
+    margin-top: -20px;
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 12px;
     display: block;
     float: right;
     opacity: 1;
-    color: #015951; }
+    color: #016E68; }
   .secheader .activecloser {
     opacity: 1;
     color: black; }
+  .secheader .adder {
+    color: white;
+    opacity: .7; }
 
 .subtext {
   margin-top: -1px;
@@ -48,6 +58,17 @@
 
 * {
   font-family: 'Source Sans Pro', sans-serif; }
+
+i {
+  display: block;
+  float: left;
+  margin: 10px; }
+
+.conline {
+  border-bottom: 1px solid black; }
+
+.bold {
+  font-weight: bold; }
 
 .input {
   display: block;
@@ -67,7 +88,8 @@ body {
     margin-top: -1px;
     border: 1px solid #D9E6E0;
     border-radius: 5px;
-    background-color: white; }
+    background-color: white;
+    margin-bottom: 20px; }
   body .tabtext {
     border: 1px solid #D9E6E0;
     width: 180px;
@@ -78,3 +100,38 @@ body {
   body .inneractive {
     background-color: #F5F5F5;
     margin-left: -1px; }
+
+.smallerbox {
+  padding-top: 10px; }
+  .smallerbox .toolbutton {
+    display: block;
+    height: 48px;
+    width: 170px;
+    text-align: center; }
+  .smallerbox .editbutton {
+    border-bottom: 1px solid black; }
+  .smallerbox .statusbutton {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: -25px; }
+  .smallerbox .mergebutton {
+    border-right: 1px solid black; }
+  .smallerbox .faqbutton {
+    margin-left: -25px; }
+
+.calendar {
+  float: right;
+  background-color: #00B3A6; }
+
+.tags {
+  float: right;
+  background-color: #00B3A6; }
+
+.sidebox {
+  margin-top: 10px; }
+
+.toolbarbox {
+  height: 130px; }
+
+.divider {
+  width: 10px; }

@@ -30,18 +30,29 @@
 				margin-top:10px;
 				text-align:center;
 				display:block;
-				font-size:15px;
+				font-size:20px;
 				color:$tabfont;
+				font-weight:bold;
 			}
 		.activetab{
 			background-color:$bgcolor !important;
 			color:$color2 !important;
 
 		}
+		.addtab{
+			background-color:$tabfont;
+			
+		}
+		.addtabfont{
+			color:white;
+			opacity:.7;
+			font-weight:bold;
+		}
 		.closer{
-			margin-top:-23px;
+
+			margin-top:-20px;
 			margin-right:20px;
-			font-size:15px;
+			font-size:12px;
 			display:block;
 			float:right;
 			opacity:1;
@@ -51,6 +62,10 @@
 			opacity:1;
 			color:black;
 			
+		}
+		.adder{
+			color:white;
+			opacity:.7
 		}
 		
 	}
