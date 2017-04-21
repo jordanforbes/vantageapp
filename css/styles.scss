@@ -1,6 +1,11 @@
 @import 'sass/colors';
 @import 'sass/header';
 @import 'sass/message';
+@import 'sass/contactinfo';
+@import 'sass/sidebar';
+@import 'sass/smallsidebar';
+@import 'sass/loginstat';
+@import 'sass/faq';
 
 *{
 font-family: 'Source Sans Pro', sans-serif;
@@ -15,7 +20,10 @@ i{
 	border-bottom:1px solid black;
 }
 .bold{
+	
 	font-weight:bold;
+	text-align:start;
+	position:relative;
 }
 .input{
 	display:block;
@@ -33,21 +41,27 @@ body{
 
 	// div{
 	// 	border:1px dashed black;
-	// }
+	// }		background-color:$bgcolor;
+		background-color:$bgcolor;
 
-	background-color:$bgcolor;
+	.bodypart{
+		background-color:$bgcolor;
+
+
+	}
 
 
 	.maintext{
-	
-		height:535px;
+		background-color:white;
+		// height:535px;
+		padding:20px;
+		width:100%;
 		
 	}
 	.texttemp{
 		margin-top:-1px;
 		border: 1px solid $bordercolor;
 		border-radius: 5px;
-		background-color: white;
 		margin-bottom:20px;
 	}
 	.tabtext{
@@ -57,55 +71,75 @@ body{
 		background-color: white;
 		display:block;
 		float:left;
+		color:$innertabfont;
+		// font-weight:bold;
+		font-size:17px;
 	}
-	.inneractive{
+	
+	.messagebutton{
+		background-color: white;
+
+	}
+	.contactinfobutton{
+		background-color:$innertab;
+		margin-left:-1px;
+	}
+	.mainfaqbutton{
 		background-color:$innertab;
 		margin-left:-1px;
 	}
 }
-.smallerbox{
-	padding-top:10px;
-	//border:1px black dashed;
-	.toolbutton{
-		// border:1px black dashed;
+.hline{
 		display:block;
-		height:48px;
-		width:170px;
-		text-align:center;
-	}
-	.editbutton{
-			border-bottom:1px solid black;
+		float:left;
+		height:1px;
+		width:100%;
+		background-color:$linecolor;
+		margin-top:5px;
 
 	}
-	.statusbutton{
-		border-left:1px solid black;
-		border-bottom:1px solid black;
-		margin-left:-25px;
-
-
-	}
-	.mergebutton{
-		border-right:1px solid black;
+	.sechline{
+		display:block;
+		float:left;
+		height:2px;
+		width:100%;
+		background-color:$linecolor;
+		margin-top:5px;
 
 	}
-	.faqbutton{
-		margin-left:-25px;
+
+.exhline{
+		display:block;
+		float:left;
+		height:1px;
+		width:100%;
+		background-color:$linecolor;
+		opacity:0;
+		
+		margin-bottom:5px;
 	}
-}
+.vline{
+		display:block;
+		float:left;
+		height:50px;
+		width:1px;
+		margin-top:-10px;
+		margin-bottom:-10px;
+		margin-left:1px;
+		margin-right:1px;
+		background-color:$linecolor;
+	}
+
 .calendar{
-	float:right;
+	
 	background-color:$color2  ;
+	padding:0;
+	// margin-right:-15px;
+	color:white;
 }
 .tags{
-	float:right;
 	background-color:$color2  ;
-}
-.sidebox{
-	margin-top:10px;
-}
-
-.toolbarbox{
-	height:130px;
+	color:white;
 }
 
 .followupbox{
@@ -121,4 +155,16 @@ body{
 }
 .divider{
 	width:10px;
+}
+.message{
+	display:block;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:500px;
+}
+.contactinfo{
+	display:none;
+}
+.mainfaq{
+	display:none;
 }

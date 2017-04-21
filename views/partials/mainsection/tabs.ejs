@@ -1,23 +1,69 @@
+
+
 <div class="section">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="message tabtext">
+					<button class="messagebutton tabtext">
 						Message
-					</div>
-					<div class="contactinfo tabtext inneractive">
+					</button>
+					<button class="contactinfobutton tabtext inneractive">
 						Contact Info
-					</div>
-					<div class="faq tabtext inneractive">
+					</button>
+					<button class="mainfaqbutton tabtext inneractive">
 						FAQ
-					</div>
+					</button>
 
 				</div>
 				
 			    <div class="row">
 			    	<div class="col-md-7 texttemp maintext">
-			    		<% include message %>
+			    		<div class="message"><% include message%></div>
+			    		<div class="contactinfo"><% include contactinfo%></div>
+			    		<div class="mainfaq"><%include faq%></div>
+
 
 			    	</div>
 			    </div>
 			 </div>
 		 </div>
+
+<script>
+var bgcolor = "#F5F5F5";
+	$(".messagebutton").click(function(){
+			$(".messagebutton").css("background-color","white")
+			$(".contactinfobutton").css("background-color",bgcolor)
+			$(".mainfaqbutton").css("background-color",bgcolor)
+
+			// $(".maintext").css("background-color","transparent")
+
+
+			$(".message").css("display","block")
+			$(".contactinfo").css("display","none")
+			$(".mainfaq").css("display","none")
+		})
+	$(".contactinfobutton").click(function(){
+			$(".messagebutton").css("background-color",bgcolor)
+			$(".contactinfobutton").css("background-color","white")
+			$(".mainfaqbutton").css("background-color",bgcolor)
+
+			// $(".maintext").css("background-color","white")
+
+			$(".message").css("display","none")
+			$(".contactinfo").css("display","block")
+			$(".mainfaq").css("display","none")
+	})
+	
+	$(".mainfaqbutton").click(function(){
+			$(".messagebutton").css("background-color",bgcolor)
+			$(".contactinfobutton").css("background-color",bgcolor)
+			$(".mainfaqbutton").css("background-color","white")
+
+						// $(".maintext").css("background-color","transparent")
+
+
+			$(".message").css("display","none")
+			$(".contactinfo").css("display","none")
+			$(".mainfaq").css("display","block")
+	})
+		
+</script>

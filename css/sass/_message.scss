@@ -1,8 +1,46 @@
 .subtext{
+	padding:10px;
+	padding-left:30px;
+
 	margin-top:-1px;
 		border: 1px solid $bordercolor;
 
-		height:175px;
-		background-color: $bgcolor;
+		
+		background-color: $msgbgcolor;
 		border-radius:5px;
+}
+.messagehead{
+	color:$contacthead;
+	font-weight:bold;
+	font-size:17px;
+}
+
+.msgbtn{
+	
+	
+	border:none;
+	background-color:$color2;
+	color:white;
+	margin:3px;
+	border-radius:3px;
+	padding-top:7px;
+	padding-bottom:7px;
+	font-size:15px;
+}
+.btnrow{
+	display:block;
+	float:right;
+}
+.combtn{
+	padding-left:23px;
+	padding-right:23px;
+}
+.msgicon{
+}
+.fa-paperclip{
+	float:right;
+	margin-top:-2px;
+	color:black;
+	opacity:0.5;
+	font-size:16px;
 }

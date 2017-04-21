@@ -6,24 +6,26 @@
     <% include ../partials/head %>
 </head>
 <body>
-
+<div class="bodypart container-fluid ">
     <header>
         <% include ../partials/header %>
     </header>
     <br>
     <br>
 
-    <div class="col-md-6">
-    <% include ../partials/mainsection/tabs%>
+    <div class="col-md-8">
+    
+        <% include ../partials/mainsection/tabs%>
+        <div class="divider"></div>
     </div>
   
-    <div class="col-md-1 divider">
-    </div>
-   
+    <!-- <div class="col-md-1 divider">
+    </div> -->
     <div class="col-md-4 sidebox">
+    <div class="container-fluid">
         <br>    
         <br>
-        <div class="container">
+        
             <div class="row">
                 <%include ../partials/sidesection/toolbar%>
             </div>
@@ -43,6 +45,6 @@
     <footer>
         <% include ../partials/footer %>
     </footer>
-    
+</div>
 </body>
 </html>

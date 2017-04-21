@@ -16,18 +16,24 @@
     margin-top: 7px;
     height: 45px;
     width: 175px;
-    float: left;
-    background-color: #00978C; }
+    float: left; }
   .secheader .tabfont {
     margin-top: 10px;
     text-align: center;
     display: block;
     font-size: 20px;
-    color: #016E68;
     font-weight: bold; }
-  .secheader .activetab {
-    background-color: #F5FEFA !important;
-    color: #00B3A6 !important; }
+  .secheader .ticket1 {
+    background-color: #F5FEFA;
+    color: #00B3A6; }
+    .secheader .ticket1 .activecloser {
+      color: black; }
+  .secheader .ticket2 {
+    background-color: #00978C;
+    color: #016E68; }
+  .secheader .ticket3 {
+    background-color: #00978C;
+    color: #016E68; }
   .secheader .addtab {
     background-color: #016E68; }
   .secheader .addtabfont {
@@ -42,19 +48,170 @@
     float: right;
     opacity: 1;
     color: #016E68; }
-  .secheader .activecloser {
-    opacity: 1;
-    color: black; }
   .secheader .adder {
     color: white;
     opacity: .7; }
 
 .subtext {
+  padding: 10px;
+  padding-left: 30px;
   margin-top: -1px;
   border: 1px solid #D9E6E0;
-  height: 175px;
-  background-color: #F5FEFA;
+  background-color: #F3FAFF;
   border-radius: 5px; }
+
+.messagehead {
+  color: #00655E;
+  font-weight: bold;
+  font-size: 17px; }
+
+.msgbtn {
+  border: none;
+  background-color: #00B3A6;
+  color: white;
+  margin: 3px;
+  border-radius: 3px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 15px; }
+
+.btnrow {
+  display: block;
+  float: right; }
+
+.combtn {
+  padding-left: 23px;
+  padding-right: 23px; }
+
+.fa-paperclip {
+  float: right;
+  margin-top: -2px;
+  color: black;
+  opacity: 0.5;
+  font-size: 16px; }
+
+.contactinfotext {
+  background-color: white;
+  font-size: 10px; }
+
+.contactheader {
+  font-weight: bold;
+  font-size: 15px;
+  color: #00655E;
+  margin-top: 20px; }
+
+.sidebox {
+  display: block; }
+
+.toolbarbox {
+  background-color: white;
+  display: block;
+  padding: 10px; }
+  .toolbarbox .texttemp {
+    margin-top: -1px;
+    border: 1px solid #D9E6E0;
+    border-radius: 5px;
+    margin-bottom: 20px; }
+  .toolbarbox .smallerbox {
+    padding: 10px;
+    display: block; }
+  .toolbarbox .toolbutton {
+    display: block;
+    height: 5%;
+    width: 47%;
+    text-align: center;
+    float: left;
+    margin-top: 10px; }
+  .toolbarbox .hline {
+    display: block;
+    float: left;
+    height: 1px;
+    width: 100%;
+    background-color: #D9D9D9;
+    margin-top: 5px; }
+  .toolbarbox .exhline {
+    display: block;
+    float: left;
+    height: 1px;
+    width: 100%;
+    background-color: #D9D9D9;
+    opacity: 0;
+    margin-bottom: 5px; }
+
+.smallertoolbarbox {
+  background-color: white;
+  display: block;
+  padding: 10px; }
+  .smallertoolbarbox .texttemp {
+    margin-top: -1px;
+    border: 1px solid #D9E6E0;
+    border-radius: 5px;
+    margin-bottom: 20px; }
+  .smallertoolbarbox .smallerbox {
+    display: block; }
+  .smallertoolbarbox .toolbutton {
+    display: block;
+    height: 100px;
+    width: 170px;
+    text-align: center;
+    float: left; }
+  .smallertoolbarbox .editbutton {
+    width: 50%;
+    font-size: 30px; }
+  .smallertoolbarbox .statusbutton {
+    width: 50%;
+    font-size: 30px; }
+  .smallertoolbarbox .mergebutton {
+    width: 50%;
+    font-size: 30px; }
+  .smallertoolbarbox .faqbutton {
+    width: 50%;
+    font-size: 30px; }
+  .smallertoolbarbox .hline {
+    display: inline;
+    height: 1px;
+    width: 100%;
+    background-color: #D9D9D9;
+    margin-top: 5px; }
+  .smallertoolbarbox .exhline {
+    display: none;
+    float: left;
+    height: 1px;
+    width: 100%;
+    background-color: #D9D9D9;
+    opacity: 0;
+    margin-bottom: 5px; }
+  .smallertoolbarbox .vline {
+    display: block;
+    align: center;
+    float: left;
+    height: 130px;
+    width: 1px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -4px;
+    background-color: #D9D9D9; }
+
+.loginstatbox {
+  text-align: left;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.loginheader {
+  margin-bottom: 10px; }
+
+.question {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.qrow {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.faqhead {
+  font-weight: bold;
+  color: #00655E; }
 
 * {
   font-family: 'Source Sans Pro', sans-serif; }
@@ -68,7 +225,9 @@ i {
   border-bottom: 1px solid black; }
 
 .bold {
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: start;
+  position: relative; }
 
 .input {
   display: block;
@@ -82,13 +241,16 @@ i {
 
 body {
   background-color: #F5FEFA; }
+  body .bodypart {
+    background-color: #F5FEFA; }
   body .maintext {
-    height: 535px; }
+    background-color: white;
+    padding: 20px;
+    width: 100%; }
   body .texttemp {
     margin-top: -1px;
     border: 1px solid #D9E6E0;
     border-radius: 5px;
-    background-color: white;
     margin-bottom: 20px; }
   body .tabtext {
     border: 1px solid #D9E6E0;
@@ -96,42 +258,74 @@ body {
     height: 50px;
     background-color: white;
     display: block;
-    float: left; }
-  body .inneractive {
+    float: left;
+    color: #9DA9A3;
+    font-size: 17px; }
+  body .messagebutton {
+    background-color: white; }
+  body .contactinfobutton {
+    background-color: #F5F5F5;
+    margin-left: -1px; }
+  body .mainfaqbutton {
     background-color: #F5F5F5;
     margin-left: -1px; }
 
-.smallerbox {
-  padding-top: 10px; }
-  .smallerbox .toolbutton {
-    display: block;
-    height: 48px;
-    width: 170px;
-    text-align: center; }
-  .smallerbox .editbutton {
-    border-bottom: 1px solid black; }
-  .smallerbox .statusbutton {
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    margin-left: -25px; }
-  .smallerbox .mergebutton {
-    border-right: 1px solid black; }
-  .smallerbox .faqbutton {
-    margin-left: -25px; }
+.hline {
+  display: block;
+  float: left;
+  height: 1px;
+  width: 100%;
+  background-color: #D9D9D9;
+  margin-top: 5px; }
+
+.sechline {
+  display: block;
+  float: left;
+  height: 2px;
+  width: 100%;
+  background-color: #D9D9D9;
+  margin-top: 5px; }
+
+.exhline {
+  display: block;
+  float: left;
+  height: 1px;
+  width: 100%;
+  background-color: #D9D9D9;
+  opacity: 0;
+  margin-bottom: 5px; }
+
+.vline {
+  display: block;
+  float: left;
+  height: 50px;
+  width: 1px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  background-color: #D9D9D9; }
 
 .calendar {
-  float: right;
-  background-color: #00B3A6; }
+  background-color: #00B3A6;
+  padding: 0;
+  color: white; }
 
 .tags {
-  float: right;
-  background-color: #00B3A6; }
-
-.sidebox {
-  margin-top: 10px; }
-
-.toolbarbox {
-  height: 130px; }
+  background-color: #00B3A6;
+  color: white; }
 
 .divider {
   width: 10px; }
+
+.message {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 500px; }
+
+.contactinfo {
+  display: none; }
+
+.mainfaq {
+  display: none; }

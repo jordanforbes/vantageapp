@@ -23,7 +23,7 @@
 			width:175px;
 			
 			float:left;
-			background-color:$tab;
+			
 
 		}
 		.tabfont{
@@ -31,14 +31,35 @@
 				text-align:center;
 				display:block;
 				font-size:20px;
-				color:$tabfont;
 				font-weight:bold;
 			}
 		.activetab{
-			background-color:$bgcolor !important;
-			color:$color2 !important;
+			
+			
 
 		}
+		.ticket1{
+			background-color:$bgcolor;
+			color:$color2;
+			.activecloser{
+				color:black;		
+			}
+		}
+		.ticket2{
+			background-color:$tab;
+			color:$tabfont;
+			.activecloser{
+						
+			}
+		}
+		.ticket3{
+			background-color:$tab;
+			color:$tabfont;
+			.activecloser{
+					
+			}
+		}
+
 		.addtab{
 			background-color:$tabfont;
 			
@@ -58,11 +79,7 @@
 			opacity:1;
 			color:$tabfont;
 		}
-		.activecloser{
-			opacity:1;
-			color:black;
-			
-		}
+		
 		.adder{
 			color:white;
 			opacity:.7

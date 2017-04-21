@@ -1,0 +1,95 @@
+.smallertoolbarbox{
+	background-color:white;
+	display:block;
+	padding:10px;
+	// height:130px;
+	.texttemp{
+		margin-top:-1px;
+		border: 1px solid $bordercolor;
+		border-radius: 5px;
+		margin-bottom:20px;
+	}
+	.smallerbox{
+
+	display:block;
+			// padding-top:15px;
+
+	//border:1px black dashed;
+	}
+	.toolrow{
+	}
+	.toolbutton{
+		// border:1px black dashed;
+		display:block;
+		height:100px;
+		width:170px;
+		text-align:center;
+		float:left
+
+	}
+	
+	
+	.editbutton{
+		
+		width:50%;
+		// border:1px black dashed;
+		font-size:30px;
+
+
+	}
+	.statusbutton{
+		
+		width:50%;
+		font-size:30px;
+		// border:1px black dashed;
+
+		//margin-left:-25px;
+
+
+	}
+	.mergebutton{
+	
+		width:50%;
+		font-size:30px;
+		// border:1px black dashed;
+
+
+	}
+	.faqbutton{
+		width:50%;
+		font-size:30px;
+		// border:1px black dashed;
+
+		//margin-left:-25px;
+	}
+	.hline{
+		display:inline;
+		height:1px;
+		width:100%;
+		background-color:$linecolor;
+		margin-top:5px;
+
+	}
+	.exhline{
+		display:none;
+		float:left;
+		height:1px;
+		width:100%;
+		background-color:$linecolor;
+		opacity:0;
+		
+		margin-bottom:5px;
+	}
+	.vline{
+		display:block;
+		align:center;
+		float:left;
+		height:130px;
+		width:1px;
+		margin-top:-10px;
+		margin-bottom:-10px;
+		margin-left:-4px;
+		
+		background-color:$linecolor;
+	}
+}

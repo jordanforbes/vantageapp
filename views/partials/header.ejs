@@ -10,15 +10,15 @@
         <div class="breaker">
         </div>
         <div class="secheader">
-            <div class="tab activetab">
+            <div class="tab activetab ticket1">
                 <span class="tabfont activetab">Ticket 1</span>
                 <span class="closer activecloser glyphicon glyphicon-remove"></span>
             </div>
-            <div class="tab">
+            <div class="tab ticket2">
                 <span class="tabfont">Ticket 2</span>
-                <span class="closer glyphicon glyphicon-remove"></span>
+                <span class="closer activecloser glyphicon glyphicon-remove"></span>
             </div>
-            <div class="tab">
+            <div class="tab ticket3">
                 <span class="tabfont">Ticket 3</span>
                 <span class="closer glyphicon glyphicon-remove"></span>
             </div>
@@ -27,3 +27,38 @@
                 <span class="closer adder glyphicon glyphicon-plus"></span>
             </div>
         </div>
+
+<script>
+$(".ticket1").click(
+    function(){
+        $(".ticket1").css("background-color","#F5FEFA");
+        $(".ticket2").css("background-color","#00978C");
+        $(".ticket3").css("background-color","#00978C");
+
+        $(".ticket1").css("color","#00B3A6");
+        $(".ticket2").css("color","#016E68");
+        $(".ticket3").css("color","#016E68");
+    })
+$(".ticket2").click(
+    function(){
+        $(".ticket1").css("background-color","#00978C");
+        $(".ticket2").css("background-color","#F5FEFA");
+        $(".ticket3").css("background-color","#00978C");
+
+        $(".ticket1").css("color","#016E68");
+        $(".ticket2").css("color","#00B3A6");
+        $(".ticket3").css("color","#016E68");
+
+    })
+$(".ticket3").click(
+    function(){
+        $(".ticket1").css("background-color","#00978C");
+        $(".ticket2").css("background-color","#00978C");
+        $(".ticket3").css("background-color","#F5FEFA");
+
+        $(".ticket1").css("color","#016E68");
+        $(".ticket2").css("color","#016E68");
+        $(".ticket3").css("color","#00B3A6");
+    })
+
+</script>

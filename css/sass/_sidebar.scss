@@ -1,0 +1,199 @@
+.sidebox{
+	display:block;
+	// margin-top:10px;
+
+}
+
+.toolbarbox{
+	background-color:white;
+	display:block;
+	padding:10px;
+	// height:130px;
+	.texttemp{
+		margin-top:-1px;
+		border: 1px solid $bordercolor;
+		border-radius: 5px;
+		margin-bottom:20px;
+	}
+	.smallerbox{
+		padding:10px;
+	display:block;
+			// padding-top:15px;
+
+	//border:1px black dashed;
+	}
+	.toolrow{
+	}
+	.toolbutton{
+		// border:1px black dashed;
+		display:block;
+		height:5%;
+		width:47%;
+		text-align:center;
+		float:left;
+		margin-top:10px;
+
+	}
+	
+	
+	.editbutton{
+		
+
+		// border:1px black dashed;
+
+
+	}
+	.statusbutton{
+		
+
+		// border:1px black dashed;
+
+		//margin-left:-25px;
+
+
+	}
+	.mergebutton{
+	
+
+		// border:1px black dashed;
+
+
+	}
+	.faqbutton{
+		
+		// border:1px black dashed;
+
+		//margin-left:-25px;
+	}
+	.hline{
+		display:block;
+		float:left;
+		height:1px;
+		width:100%;
+		background-color:$linecolor;
+		margin-top:5px;
+
+	}
+	.exhline{
+		display:block;
+		float:left;
+		height:1px;
+		width:100%;
+		background-color:$linecolor;
+		opacity:0;
+		
+		margin-bottom:5px;
+	}
+	// .vline{
+	// 	display:block;
+	// 	float:left;
+	// 	height:10px;
+	// 	width:1px;
+	// 	margin-top:-10px;
+	// 	margin-bottom:-10px;
+	// 	margin-left:1px;
+	// 	margin-right:1px;
+	// 	background-color:$linecolor;
+	// }
+}
+
+
+
+
+
+
+
+
+// .longerbox{
+// 	display:block;
+// 	.toolbutton{
+// 		// border:1px black dashed;
+// 		display:block;
+// 		height:48px;
+// 		width:170px;
+// 		text-align:center;
+// 		float:left
+
+// 	}
+	
+	
+// 	.editbutton{
+		
+
+// 		// border:1px black dashed;
+
+
+// 	}
+// 	.statusbutton{
+		
+
+// 		// border:1px black dashed;
+
+// 		//margin-left:-25px;
+
+
+// 	}
+// 	.mergebutton{
+	
+
+// 		// border:1px black dashed;
+
+
+// 	}
+// 	.faqbutton{
+		
+// 		// border:1px black dashed;
+
+// 		//margin-left:-25px;
+// 	}
+// }
+
+// .smallerbox{
+
+// 	display:block;
+// 			// padding-top:15px;
+
+// 	//border:1px black dashed;
+// 	.toolrow{
+// 	}
+// 	.toolbutton{
+// 		// border:1px black dashed;
+// 		display:block;
+// 		height:48px;
+// 		width:170px;
+// 		text-align:center;
+// 		float:left
+
+// 	}
+	
+	
+// 	.editbutton{
+		
+
+// 		// border:1px black dashed;
+
+
+// 	}
+// 	.statusbutton{
+		
+
+// 		// border:1px black dashed;
+
+// 		//margin-left:-25px;
+
+
+// 	}
+// 	.mergebutton{
+	
+
+// 		// border:1px black dashed;
+
+
+// 	}
+// 	.faqbutton{
+		
+// 		// border:1px black dashed;
+
+// 		//margin-left:-25px;
+// 	}
+// }
